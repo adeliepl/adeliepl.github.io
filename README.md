@@ -2,6 +2,7 @@
 
 I'm a creative and hardworking individual passionate about blending **technology, design, and human connection** to solve real-world challenges. Currently pursuing my **master’s in Information Systems** at Santa Clara University, I bring a unique perspective from my background in **Business Administration**, allowing me to approach tech with strategic insight.
 
+### 🌐 **Check out my landing page:** [adeliepl.github.io](https://adeliepl.github.io)
 ---
 ### Interests:
 - 👀 **Exploring:** the intersection of **AI** and **creativity**, sustainable solutions in tech, and fostering collaboration across disciplines.
