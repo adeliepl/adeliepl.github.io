@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelie Plumasseau</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #1a1a1a; /* Dark background */
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #e1c4f5; /* Elegant purple */
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #f2a4e3; /* Soft pink */
+        }
+
+        /* About Section */
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            color: #e1c4f5;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #d3d3d3; /* Light gray for readability */
+        }
+
+        /* Download Section */
+        .download h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #e1c4f5;
+        }
+
+        .download .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .download .btn:hover {
+            background: linear-gradient(45deg, #f2a4e3, #e1c4f5);
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .link {
+            color: #e1c4f5;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #f2a4e3;
+        }
+
+        .profile-pic {
+            width: 150px; /* Adjust width as needed */
+            height: 150px; /* Keep height the same as width for a perfect circle */
+            border-radius: 50%; /* Makes the image circular */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+            margin: 20px auto; /* Centers the image */
+            display: block; /* Ensures proper alignment */
+            border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
+            object-fit: cover; /* Ensures the image scales well within the circle */
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="adelieplum.jpeg" alt="Adelie Plumasseau" class="profile-pic">
+            <h1 class="name">Adelie Plumasseau</h1>
+            <p class="tagline">Think Harder, Girly</p>
+        </header>
+        <main class="main-content">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Bonjour! I'm Adelie, a creative, hardworking individual with a passion for technology, design, and connecting with people.
+                    I thrive at the intersection of creativity and innovation, bringing bold ideas to life with determination and skill.
+                    My mission is to help others, solve challenges, and leave a meaningful impact in a fast-changing world.
+                </p>
+            </section>
+            <section class="download">
+                <h2>Download my CV</h2>
+                <a href="PlumasseauAdelie SCU.pdf" target="_blank" class="btn">Download CV</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Connect with me on:</p>
+            <div class="social-links">
+                <a href="https://github.com/PixiDelie" target="_blank" class="link">GitHub</a> |
+                <a href="https://www.linkedin.com/in/adelie-plumasseau/" target="_blank" class="link">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
