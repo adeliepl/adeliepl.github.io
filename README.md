@@ -23,7 +23,7 @@ I'm a creative and hardworking individual passionate about blending **technology
 ⚡ **Fun fact:** I learned to code during the pandemic after joining **SheCodes** workshops, a transformative experience that ignited my love for technology and problem-solving.
 
 ---
-### Hackathon Project: Climacs (https://devpost.com/your-project-link)](https://devpost.com/software/climacs)
+### Hackathon Project: Climacs (https://devpost.com/software/climacs)
 🏆 Built Climacs during the Hack for Humanity Hackathon using React Native, MongoDB, and Google Cloud.
 
 ---
