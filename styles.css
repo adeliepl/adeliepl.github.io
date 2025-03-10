@@ -1,105 +1,214 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    background-color: #1a1a1a; /* Dark background */
-}
 
-/* Container */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #2f2f2f; /* Dark gray for text */
+  background: #f8f1f0; /* Light pink */
 }
 
 /* Header */
-.header {
-    text-align: center;
-    padding: 20px 0;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(248, 241, 240, 0.9); /* Light pink with transparency */
+  z-index: 100; /* Ensures the header stays on top */
+  text-align: center;
+  padding: 20px;
 }
 
-.name {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #e1c4f5; /* Elegant purple */
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #2f2f2f;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
-.tagline {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #f2a4e3; /* Soft pink */
+nav a:hover {
+  color: #f2a4e3; /* Soft pink */
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #e1c4f5, #f2a4e3);
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  color: #2f2f2f;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-family: 'Great Vibes', cursive;
+  color: #2f2f2f;
+  margin-bottom: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {opacity: 1; }
+}
+
+.profile-pic {
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Keep height the same as width for a perfect circle */
+  border-radius: 5px; /* Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+  border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
+  object-fit: cover;
 }
 
 /* About Section */
-.about h2 {
-    font-family: 'Playfair Display', serif;
-    color: #e1c4f5;
-    font-size: 1.8rem;
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff; 
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: #2f2f2f;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #f2a4e3;
+}
+
+.about-content {
+  margin-top: 0 auto;
+  max-width: 800px;
+}
+
+.about-subsection {
+  margin-bottom: 40px;
+}
+
+.about-subsection h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #e1c4f5;
+  margin-bottom: 15px;
+}
+
+.about-subsection p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #2f2f2f;
+}
+
+/* Experience */
+.experience {
+  padding: 80px 20px;
+  text-align: center;
+  color: #d3d3d3; /* Light gray for readability */
+}
+
+.experience-content {
+  margin-top: 0 auto;
+  max-width: 800px;
+}
+
+.projects {
+    padding: 80px 20px;
+    background: #FFF;
+    text-align: center;
+}
+
+.project-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid  #f2a4e3;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #e1c4f5; 
 }
 
-.about p {
+.project-item p {
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-size: 1rem;
-    color: #d3d3d3; /* Light gray for readability */
+    color: #2F2F2F;
 }
 
-/* Download Section */
-.download h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #e1c4f5;
-}
-
-.download .btn {
+.resume-btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 15px 30px;
     background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
-    color: #1a1a1a;
+    color: #2F2F2F;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
     transition: background 0.3s ease;
 }
 
-.download .btn:hover {
-    background: linear-gradient(45deg, #f2a4e3, #e1c4f5);
+.resume-btn:hover {
+    background: linear-gradient(45deg, #f2a4e3, #e1c4f5);; /* Dark grey */
     color: #fff;
 }
 
 /* Footer */
 .footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
-    margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background: #4a8c7e;
 }
 
 .social-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.link {
-    color: #e1c4f5;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.social-links a {
+  margin: 0 15px;
+  color: #e1c4f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.link:hover {
-    color: #f2a4e3;
-}
-
-.profile-pic {
-    width: 150px; /* Adjust width as needed */
-    height: 150px; /* Keep height the same as width for a perfect circle */
-    border-radius: 50%; /* Makes the image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
-    margin: 20px auto; /* Centers the image */
-    display: block; /* Ensures proper alignment */
-    border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
-    object-fit: cover; /* Ensures the image scales well within the circle */
+.social-links a:hover {
+  color: #f2a4e3;
 }
