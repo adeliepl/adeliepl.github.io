@@ -1,7 +1,11 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #2f2f2f; /* Dark gray for text */
   background: #f8f1f0; /* Light pink */
 }
@@ -12,16 +16,16 @@ header {
   top: 0;
   width: 100%;
   background: rgba(248, 241, 240, 0.9); /* Light pink with transparency */
-  z-index: 100; /* Ensures the header stays on top */
+  z-index: 500; /* Ensures the header stays on top */
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 nav a {
   margin: 0 20px;
   text-decoration: none;
   color: #2f2f2f;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
@@ -32,29 +36,29 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
+  padding-top: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #e1c4f5, #f2a4e3);
-  padding: 100px 0;
+  background: linear-gradient(to right, #f8f1f0, #e0d4cc);
   position: relative;
 }
 
 .hero h1 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 3.5rem;
   color: #2f2f2f;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.8rem;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   color: #2f2f2f;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .fade-in {
@@ -63,7 +67,9 @@ nav a:hover {
 }
 
 @keyframes fadeIn {
-  to {opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 .profile-pic {
@@ -73,17 +79,19 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
   border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
   object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 /* About Section */
 .about {
   padding: 80px 20px;
   text-align: center;
-  background: #fff; 
+  background: #fff;
 }
 
 .section-title {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 2.5rem;
   color: #2f2f2f;
   position: relative;
@@ -96,13 +104,13 @@ nav a:hover {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
+  width: 60px;
   height: 3px;
   background: #f2a4e3;
 }
 
 .about-content {
-  margin-top: 0 auto;
+  margin: 0 auto;
   max-width: 800px;
 }
 
@@ -111,9 +119,9 @@ nav a:hover {
 }
 
 .about-subsection h3 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 1.5rem;
-  color: #e1c4f5;
+  color: #f2a4e3;
   margin-bottom: 15px;
 }
 
@@ -131,74 +139,120 @@ nav a:hover {
 }
 
 .experience-content {
-  margin-top: 0 auto;
+  margin: 0 auto;
   max-width: 800px;
 }
 
+.experience-item {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.experience-item h3 {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #f2a4e3; /* Soft pink */
+}
+
+.experience-item .details {
+  font-style: italic;
+  font-size: 1rem;
+  color: #4a8c7e; /* Muted teal */
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  position: relative;
+  margin-bottom: 10px;
+  color: #2f2f2f;
+}
+
+.experience-item ul li::before {
+  content: "✿"; /* Cute fleur-de-lis bullet */
+  position: absolute;
+  left: -20px;
+  color: #f2a4e3; /* Soft pink */
+}
+
 .projects {
-    padding: 80px 20px;
-    background: #FFF;
-    text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
 }
 
 .project-content {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-item {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 2px solid  #f2a4e3;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 2px solid #f2a4e3;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .project-item:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project-item h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #e1c4f5; 
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e1c4f5;
 }
 
 .project-item p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #2F2F2F;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2f2f2f;
+}
+
+.resume {
+  text-align: center;
+  padding: 50px 50px;
+  background: #f8f1f0; /* Soft peach-pink */
 }
 
 .resume-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
-    color: #2F2F2F;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Cinzel', serif;
-    font-size: 1.2rem;
-    transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
+  color: #2f2f2f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
 }
 
 .resume-btn:hover {
-    background: linear-gradient(45deg, #f2a4e3, #e1c4f5);; /* Dark grey */
-    color: #fff;
+  background: linear-gradient(45deg, #f2a4e3, #e1c4f5); /* Dark grey */
+  color: #fff;
 }
 
 /* Footer */
-.footer {
+footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   color: #fff;
   background: #4a8c7e;
 }
 
 .social-links {
   margin-top: 10px;
+  text-align: center;
 }
 
 .social-links a {
@@ -206,9 +260,43 @@ nav a:hover {
   color: #e1c4f5;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Cinzel", serif;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
   color: #f2a4e3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 300px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  .experience-item,
+  .project-item {
+    padding: 15px;
+  }
 }
