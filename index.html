@@ -1,158 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adelie Plumasseau</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Reset */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #fff;
-            background-color: #1a1a1a; /* Dark background */
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header   -->
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
 
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    <!-- Main Content -->
+    <section id="#home" class="hero">
+      <h1 class="fade-in">Adelie Plumasseau</h1>
+      <p class="fade-in">Business Student From Guadeloupe 🇫🇷</p>
+      <img
+        src="AdeliePlumasseau.jpeg"
+        alt="Adelie Plumasseau"
+        class="profile-pic"
+      />
+    </section>
 
-        /* Header */
-        .header {
-            text-align: center;
-            padding: 20px 0;
-        }
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Bonjour! I'm Adelie, a creative and hardworking individual with a
+        passion for blending technology, design, and human connection. As a
+        lifelong learner, I thrive at the intersection of innovation and
+        creativity, bringing bold ideas to life with determination and skill. ✨
+      </p>
 
-        .name {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #e1c4f5; /* Elegant purple */
-        }
+      <p>
+        Currently pursuing my master’s in Information Systems, I’m also proud to
+        serve as the Vice President of Mentor
+      </p>
 
-        .tagline {
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: #f2a4e3; /* Soft pink */
-        }
+      <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-content">
+          <div class="experience-item">
+            <h3>Grammarly, Data Analytics Intern</h3>
+            <p class="details">Santa Clara, CA | January 2025 - Present</p>
+            <ul>
+              <li>
+                Leveraging SQL and Python to develop a User Growth Model for
+                enterprise clients.
+              </li>
+              <li>
+                Analyzing user segmentation within the activation phase,
+                focusing on key metrics that drive product adoption and
+                retention.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Santa Clara University, Vice President of Mentorship</h3>
+            <p class="details">Santa Clara, CA | January 2025 - Present</p>
+            <ul>
+              <li>
+                Designed and launched the mentorship program, connecting
+                graduate students with industry professionals for career
+                guidance and skill development.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Firstbase, Marketing Specialist</h3>
+            <p class="details">Menlo Park, CA | August 2023 - September 2023</p>
+            <ul>
+              <li>
+                Analyzed LinkedIn engagement and growth metrics to develop a
+                data-driven social media strategy, increasing follower count and
+                total engagements from last place to 2nd among competitors
+                within 30 days.
+              </li>
+              <li>
+                Supported the Growth Marketing Manager with designing, building,
+                and executing impactful marketing campaigns across multiple
+                channels, including email, organic social, paid advertising, and
+                events.
+              </li>
+              <li>
+                Communicated Firstbase's value proposition effectively at the
+                SHRM23 and VMWare conferences, fostering relationships and
+                actively engaging with key prospects to address their needs and
+                inquiries.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Firstbase, Marketing Intern</h3>
+            <p class="details">Menlo Park, CA | February 2023 - August 2023</p>
+            <ul>
+              <li>
+                Monitored and reported on newsletter engagement, contributing to
+                $1.5M in Q2 pipeline sourced from new subscribers by optimizing
+                content strategy and audience targeting.
+              </li>
+              <li>
+                Worked with the Director of Product Marketing to support monthly
+                product launches by planning, promoting, editing, and publishing
+                product webinars.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        /* About Section */
-        .about h2 {
-            font-family: 'Playfair Display', serif;
-            color: #e1c4f5;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        .about p {
-            line-height: 1.6;
-            font-size: 1rem;
-            color: #d3d3d3; /* Light gray for readability */
-        }
-
-        /* Download Section */
-        .download h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: #e1c4f5;
-        }
-
-        .download .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
-            color: #1a1a1a;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .download .btn:hover {
-            background: linear-gradient(45deg, #f2a4e3, #e1c4f5);
-            color: #fff;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9rem;
-            border-top: 1px solid #333;
-            margin-top: 20px;
-        }
-
-        .social-links {
-            margin-top: 10px;
-        }
-
-        .link {
-            color: #e1c4f5;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .link:hover {
-            color: #f2a4e3;
-        }
-
-        .profile-pic {
-            width: 150px; /* Adjust width as needed */
-            height: 150px; /* Keep height the same as width for a perfect circle */
-            border-radius: 50%; /* Makes the image circular */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
-            margin: 20px auto; /* Centers the image */
-            display: block; /* Ensures proper alignment */
-            border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
-            object-fit: cover; /* Ensures the image scales well within the circle */
-}
-
-    </style>
-    
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <img src="adelieplum.jpeg" alt="Adelie Plumasseau" class="profile-pic">
-            <h1 class="name">Adelie Plumasseau</h1>
-            <p class="tagline">Business Student From Guadeloupe 🇫🇷</p>
-        </header>
-        <main class="main-content">
-            <section class="about">
-                    <h2>About Me</h2>
-                    <p>
-                        Bonjour! I'm Adelie, a creative and hardworking individual with a passion for blending technology, design, and human connection. 
-                        As a lifelong learner, I thrive at the intersection of innovation and creativity, bringing bold ideas to life with determination and skill. ✨
-                    </p>
-                    <p>
-                        Currently pursuing my master’s in Information Systems, I’m also proud to serve as the Vice President of Mentorship in the Women in Business club, 
-                        where I empower and support others in achieving their goals.💡
-                    </p>
-                    <p>
-                        Beyond my love for technology, I find joy in exploring art 🎨, connecting with people 🌟, and building friendships. 
-                        Fashion is another creative outlet that fuels my imagination, and drawing allows me to bring my ideas to life on paper. 
-                        Whether it’s crafting elegant solutions or brainstorming innovative ideas, I aim to bring energy, curiosity, and purpose to everything I do.
-                    </p>
-                
-            </section>
-            <section class="download">
-                <h2>Download my CV</h2>
-                <a href="PlumasseauAdelie.pdf" target="_blank" class="btn">Download CV</a>
-            </section>
-        </main>
-        <footer class="footer">
-            <p>Connect with me on:</p>
-            <div class="social-links">
-                <a href="https://github.com/adeliepl" target="_blank" class="link">GitHub</a> |
-                <a href="https://www.linkedin.com/in/adelie-plumasseau/" target="_blank" class="link">LinkedIn</a>
-            </div>
-        </footer>
-    </div>
-</body>
+      <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-content">
+          <div class="project-item">
+            <h3>Game of Thrones Quote Quiz</h3>
+            <p>
+              A fun and interactive quiz to test your knowledge of Game of
+              Thrones quotes. Do you have what it takes to claim the Iron Throne
+              of trivia?
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Stock Market Sentiment Analyzer</h3>
+            <p>
+              A simple NLP-based tool to analyze stock market sentiment from
+              news and Twitter and compare it with stock price trends.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Neglected Tropical Diseases (NTDs) Analysis</h3>
+            <p>
+              Analyzes WHO data from 2010-2021 to uncover trends, disparities,
+              and insights into the battle against NTDs in the Africa region.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Airbnb Analytics</h3>
+            <p>
+              Data-driven analysis of Airbnb listings to identify trends in
+              profitability, neighborhood performance, and investment
+              opportunities using Python.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p>© 2025 Adelie Plumasseau | Designed with Love</p>
+      <div class="social-links">
+        <a href="https://github.com/adeliepl" target="_blank" class="link"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/adelie-plumasseau/"
+          target="_blank"
+          class="link"
+          >LinkedIn
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #1a1a1a; /* Dark background */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #e1c4f5; /* Elegant purple */
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #f2a4e3; /* Soft pink */
+}
+
+/* About Section */
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e1c4f5;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #d3d3d3; /* Light gray for readability */
+}
+
+/* Download Section */
+.download h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #e1c4f5;
+}
+
+.download .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #e1c4f5, #f2a4e3);
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download .btn:hover {
+    background: linear-gradient(45deg, #f2a4e3, #e1c4f5);
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.link {
+    color: #e1c4f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #f2a4e3;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Keep height the same as width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+    margin: 20px auto; /* Centers the image */
+    display: block; /* Ensures proper alignment */
+    border: 3px solid #f2a4e3; /* Optional: Border matching your theme */
+    object-fit: cover; /* Ensures the image scales well within the circle */
+}
